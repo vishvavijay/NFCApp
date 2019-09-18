@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+    <FrameLayout
+        android:id="@+id/frame_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/colorAccent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="32dp"
+                android:fontFamily="@font/roboto_medium"
+                android:text="NFC"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="141dp"
+            android:orientation="vertical">
+
+
+            <EditText
+                android:visibility="gone"
+                android:id="@+id/et_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="33dp"
+                android:layout_marginRight="33dp"
+                />
+
+            <Button
+                android:id="@+id/btn_write"
+                android:text="Write to NFC TAG"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginLeft="33dp"
+                android:layout_marginRight="33dp"
+                android:layout_marginTop="50dp"
+                android:textSize="18sp"
+                android:fontFamily="@font/roboto_bold"
+                android:background="@drawable/bg_button_blank"
+                android:textColor="@color/colorAccent"
+                />
+
+            <Button
+                android:id="@+id/btn_read"
+                android:text="Read From NFC Tag"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginLeft="33dp"
+                android:layout_marginRight="33dp"
+                android:layout_marginTop="30dp"
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp"
+                android:fontFamily="@font/roboto_bold"
+                android:background="@drawable/bg_button_blank"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
